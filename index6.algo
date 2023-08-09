@@ -1,0 +1,65 @@
+ALGORITHM sum distinct num
+VAR
+    Set1: array_1 : ARRAY_OF INTEGER[3,1,7,9];
+    set2: array_2 : ARRAY_OF INTEGER[2,4,1,9,3];
+    tab:= ARRAY_OF INTEGER[10];
+    somme:INTEGER:=0;
+    i,j:INTEGER;
+    test:BOOLEAN;
+BEGIN
+    FOR i FROM 0 TO 3 STEP step  DO
+    test:= false;
+        FOR j FROM 0 TO 4 STEP step  DO
+            IF (Set1[i]=set2[j]) THEN
+                test:=true
+            END_IF
+        END_FOR
+        IF (test:=false) THEN
+            somme:=somme+set1[i];
+        END_IF
+    END_FOR
+    FOR j FROM 0 TO 4 STEP step  DO
+    test:= false;
+        FOR i FROM 0 TO 3 STEP step  DO
+            IF (Set2[j]=set1[i]) THEN
+                test:=true
+            END_IF
+        END_FOR
+        IF (test:=false) THEN
+            somme:=somme+set2[j];
+        END_IF
+    END_FOR
+END
+
+ALGORITHM sum distinct num
+VAR
+    Set1: array_1 : ARRAY_OF INTEGER[3,1,7,9];
+    set2: array_2 : ARRAY_OF INTEGER[2,4,1,9,3];
+    tab:= ARRAY_OF INTEGER[10];
+    somme:INTEGER:=0;
+    i,j:INTEGER;
+    test:BOOLEAN;
+BEGIN
+    FOR i FROM 0 TO 3 STEP step  DO
+    test:= false;
+        FOR j FROM 0 TO 4 STEP step  DO
+            IF (Set1[i]=set2[j]) THEN
+                test:=true
+            END_IF
+        END_FOR
+        IF (test:=false) THEN
+            somme:=somme+set1[i];
+        END_IF
+    END_FOR
+    FOR j FROM 0 TO 4 STEP step  DO
+    test:= false;
+        FOR i FROM 0 TO 3 STEP step  DO
+            IF (Set2[j]=set1[i]) THEN
+                test:=true
+            END_IF
+        END_FOR
+        IF (test:=false) THEN
+            somme:=somme+set2[j];
+        END_IF
+    END_FOR
+END
